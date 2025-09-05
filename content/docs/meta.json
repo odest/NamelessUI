@@ -1,0 +1,11 @@
+{
+  "title": "NamelessUI",
+  "root": true,
+  "pages": [
+    "---Getting started---",
+    "index",
+    "installation",
+    "---Components---",
+    "tilt-effect"
+  ]
+}
