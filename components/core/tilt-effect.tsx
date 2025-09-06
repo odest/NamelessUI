@@ -14,7 +14,7 @@ export const TiltEffect: React.FC<TiltEffectProps> = ({
   children,
   tiltFactor = 12,
   perspective = 1000,
-  transitionDuration = 0.5
+  transitionDuration = 0.5,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [elementSize, setElementSize] = useState({ width: 0, height: 0 });
@@ -29,12 +29,12 @@ export const TiltEffect: React.FC<TiltEffectProps> = ({
   const rotateX = useTransform(
     ySpring,
     [-elementSize.height / 2, elementSize.height / 2],
-    [tiltFactor, -tiltFactor]
+    [tiltFactor, -tiltFactor],
   );
   const rotateY = useTransform(
     xSpring,
     [-elementSize.width / 2, elementSize.width / 2],
-    [-tiltFactor, tiltFactor]
+    [-tiltFactor, tiltFactor],
   );
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export const TiltEffect: React.FC<TiltEffectProps> = ({
       if (ref.current) {
         setElementSize({
           width: ref.current.offsetWidth,
-          height: ref.current.offsetHeight
+          height: ref.current.offsetHeight,
         });
       }
     };
@@ -73,20 +73,22 @@ export const TiltEffect: React.FC<TiltEffectProps> = ({
       ref={ref}
       style={{
         perspective,
-        transformStyle: "preserve-3d"
+        transformStyle: "preserve-3d",
       }}
       onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}>
+      onMouseLeave={handleMouseLeave}
+    >
       <motion.div
         style={{
           rotateX,
-          rotateY
+          rotateY,
         }}
         transition={{
           duration: transitionDuration,
           type: "spring",
-          ...springConfig
-        }}>
+          ...springConfig,
+        }}
+      >
         {children}
       </motion.div>
     </motion.div>

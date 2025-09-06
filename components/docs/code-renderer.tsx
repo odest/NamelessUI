@@ -1,4 +1,4 @@
-import {CodeBlock} from "@/components/docs/code-block";
+import { CodeBlock } from "@/components/docs/code-block";
 import React from "react";
 
 type CodeRenderer = {
@@ -7,5 +7,5 @@ type CodeRenderer = {
 };
 
 export default async function CodeRenderer({ name }: CodeRenderer) {
-  return <CodeBlock filePath={`components/examples/${name}.tsx`} />
+  return <CodeBlock filePath={`components/examples/${name}.tsx`} />;
 }

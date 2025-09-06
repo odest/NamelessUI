@@ -14,7 +14,7 @@ type ComponentCodePreview = {
 export default function ComponentInstallation({
   name,
   baseFolder = "core",
-  deps
+  deps,
 }: ComponentCodePreview) {
   return (
     <Tabs defaultValue="manual" className="w-full">

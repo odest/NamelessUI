@@ -14,13 +14,18 @@ type ComponentCodePreview = {
 export default function ComponentCodePreview({
   name,
   contentClassName,
-  iframe = false
+  iframe = false,
 }: ComponentCodePreview) {
-  const Comp = !iframe ? dynamic(() => import(`@/components/examples/${name}.tsx`)) : null;
+  const Comp = !iframe
+    ? dynamic(() => import(`@/components/examples/${name}.tsx`))
+    : null;
 
   return (
     <Tabs items={["Preview", "Code"]} className="*:border-b">
-      <Tab value="Preview" className="overflow-hidden rounded-tl-none rounded-tr-none p-0">
+      <Tab
+        value="Preview"
+        className="overflow-hidden rounded-tl-none rounded-tr-none p-0"
+      >
         <div className="not-prose relative z-0 flex items-center justify-between">
           {iframe ? (
             <iframe className="h-[400px] w-full" src={`/demo/${name}`} />
@@ -31,12 +36,14 @@ export default function ComponentCodePreview({
                   <LoaderIcon className="mr-2 size-4 animate-spin" />
                   Loading...
                 </div>
-              }>
+              }
+            >
               <div
                 className={cn(
                   "flex min-h-0 w-full items-center justify-center overflow-hidden px-8 py-24 lg:px-32",
-                  contentClassName
-                )}>
+                  contentClassName,
+                )}
+              >
                 {Comp && <Comp />}
               </div>
             </Suspense>
