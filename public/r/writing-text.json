@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "writing-text",
+  "type": "registry:ui",
+  "title": "Writing Text",
+  "description": "A text component that smoothly reveals content word by word.",
+  "dependencies": ["motion"],
+  "files": [
+    {
+      "path": "components/core/writing-text.tsx",
+      "content": "'use client';\n\nimport * as React from 'react';\nimport {\n  motion,\n  useInView,\n  type Transition,\n  type UseInViewOptions,\n} from 'motion/react';\n\ntype WritingTextProps = Omit\u003CReact.ComponentProps\u003C'span'\u003E, 'children'\u003E & {\n  transition?: Transition;\n  inView?: boolean;\n  inViewMargin?: UseInViewOptions['margin'];\n  inViewOnce?: boolean;\n  spacing?: number | string;\n  text: string;\n};\n\nfunction WritingText({\n  ref,\n  inView = false,\n  inViewMargin = '0px',\n  inViewOnce = true,\n  spacing = 5,\n  text,\n  transition = { type: 'spring', bounce: 0, duration: 2, delay: 0.5 },\n  ...props\n}: WritingTextProps) {\n  const localRef = React.useRef\u003CHTMLSpanElement\u003E(null);\n  React.useImperativeHandle(ref, () =\u003E localRef.current as HTMLSpanElement);\n\n  const inViewResult = useInView(localRef, {\n    once: inViewOnce,\n    margin: inViewMargin,\n  });\n  const isInView = !inView || inViewResult;\n\n  const words = React.useMemo(() =\u003E text.split(' '), [text]);\n\n  return (\n    \u003Cspan ref={localRef} data-slot=\"writing-text\" {...props}\u003E\n      {words.map((word, index) =\u003E (\n        \u003Cmotion.span\n          key={index}\n          className=\"inline-block will-change-transform will-change-opacity\"\n          style={{ marginRight: spacing }}\n          initial={{ opacity: 0, y: 10 }}\n          animate={isInView ? { opacity: 1, y: 0 } : undefined}\n          transition={{\n            ...transition,\n            delay: index * (transition?.delay ?? 0),\n          }}\n        \u003E\n          {word}{' '}\n        \u003C/motion.span\u003E\n      ))}\n    \u003C/span\u003E\n  );\n}\n\nexport { WritingText, type WritingTextProps };\n",
+      "type": "registry:ui",
+      "target": "components/core/writing-text.tsx"
+    }
+  ]
+}
