@@ -6,7 +6,7 @@ type CodeBlockProps = {
   className?: string;
 };
 
-export function CodeBlock({ filePath, className }: CodeBlockProps) {
+export function CodeBlock({ filePath }: CodeBlockProps) {
   const code = extractCodeFromFilePath(filePath);
 
   return <CodePreview code={code} lang={"tsx"} />;

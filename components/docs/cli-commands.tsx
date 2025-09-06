@@ -10,25 +10,25 @@ export default function CliCommands() {
   const commands = [
     {
       name: "npm",
-      value: `npx shadcn@latest add ${process.env.NEXT_PUBLIC_BASE_URL}/r/${slug}.json`
+      value: `npx shadcn@latest add ${process.env.NEXT_PUBLIC_BASE_URL}/r/${slug}.json`,
     },
     {
       name: "pnpm",
-      value: `pnpm dlx shadcn@latest add ${process.env.NEXT_PUBLIC_BASE_URL}/r/${slug}.json`
+      value: `pnpm dlx shadcn@latest add ${process.env.NEXT_PUBLIC_BASE_URL}/r/${slug}.json`,
     },
     {
       name: "yarn",
-      value: `npx shadcn@latest add ${process.env.NEXT_PUBLIC_BASE_URL} }/r/${slug}.json`
+      value: `npx shadcn@latest add ${process.env.NEXT_PUBLIC_BASE_URL}/r/${slug}.json`,
     },
     {
       name: "bun",
-      value: `bun x --bun shadcn@latest add ${process.env.NEXT_PUBLIC_BASE_URL}/r/${slug}`
-    }
+      value: `bun x --bun shadcn@latest add ${process.env.NEXT_PUBLIC_BASE_URL}/r/${slug}.json`,
+    },
   ];
 
   return (
     <TabsComponents.Tabs items={commands.map((command) => command.name)}>
-      {commands.map((command, index) => (
+      {commands.map((command) => (
         <TabsComponents.Tab key={command.name} value={command.name}>
           <DynamicCodeBlock code={command.value} lang="tsx" />
         </TabsComponents.Tab>
