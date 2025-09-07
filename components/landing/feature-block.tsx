@@ -22,10 +22,13 @@ export default function Features() {
             ease: [0.23, 1, 0.32, 1],
           }}
           className={cn(
-            "text-blue-600 dark:text-blue-400 relative flex flex-col items-center gap-2",
+            "text-blue-600 dark:text-blue-400 relative flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-200"
           )}
         >
-          <TailwindCSS className="w-8 h-8" aria-label="TailwindCSS" />
+          <TailwindCSS
+            className="w-8 h-8 hover:rotate-360 transition-transform duration-200"
+            aria-label="TailwindCSS"
+          />
           <span className="text-xs text-center mt-1 whitespace-nowrap text-black dark:text-white">
             Tailwind CSS
           </span>
@@ -41,10 +44,13 @@ export default function Features() {
             ease: [0.23, 1, 0.32, 1],
           }}
           className={cn(
-            "text-yellow-500 dark:text-[#F5EA1E] relative flex flex-col items-center gap-2",
+            "text-yellow-500 dark:text-[#F5EA1E] relative flex flex-col items-center gap-2 hover:scale-110 transition-transform duration-200"
           )}
         >
-          <Motion className="w-8 h-8" aria-label="Motion" />
+          <Motion
+            className="w-8 h-8 hover:rotate-360 transition-transform duration-200"
+            aria-label="Motion"
+          />
           <span className="text-xs text-center mt-1 whitespace-nowrap text-black dark:text-white">
             Motion
           </span>
@@ -60,11 +66,11 @@ export default function Features() {
             ease: [0.23, 1, 0.32, 1],
           }}
           className={cn(
-            "text-black dark:text-white flex flex-col items-center gap-2 relative",
+            "text-black dark:text-white flex flex-col items-center gap-2 relative hover:scale-110 transition-transform duration-200"
           )}
         >
           <ShadcnIcon
-            className="w-8 h-8 text-black dark:text-white"
+            className="w-8 h-8 text-black dark:text-white hover:rotate-360 transition-transform duration-200"
             aria-label="Shadcn/ui"
           />
           <span className="text-xs text-center mt-1 whitespace-nowrap">
@@ -82,10 +88,13 @@ export default function Features() {
             ease: [0.23, 1, 0.32, 1],
           }}
           className={cn(
-            "text-black dark:text-white flex flex-col items-center gap-2 relative col-span-1 col-start-1 md:col-auto",
+            "text-black dark:text-white flex flex-col items-center gap-2 relative col-span-1 col-start-1 md:col-auto hover:scale-110 transition-transform duration-200"
           )}
         >
-          <Nextjs className="w-8 h-8" aria-label="Next.js" />
+          <Nextjs
+            className="w-8 h-8 hover:rotate-360 transition-transform duration-200"
+            aria-label="Next.js"
+          />
           <span className="text-xs text-center mt-1 whitespace-nowrap">
             Next.js
           </span>
@@ -100,10 +109,13 @@ export default function Features() {
             ease: [0.23, 1, 0.32, 1],
           }}
           className={cn(
-            "text-black dark:text-white flex flex-col items-center gap-2 relative col-span-1 col-start-3 md:col-auto",
+            "text-black dark:text-white flex flex-col items-center gap-2 relative col-span-1 col-start-3 md:col-auto hover:scale-110 transition-transform duration-200"
           )}
         >
-          <ReactIcon className="w-8 h-8" aria-label="React" />
+          <ReactIcon
+            className="w-8 h-8 hover:rotate-360 transition-transform duration-200"
+            aria-label="React"
+          />
           <span className="text-xs text-center mt-1 whitespace-nowrap">
             React
           </span>

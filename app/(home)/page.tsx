@@ -1,8 +1,7 @@
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Star, Code } from "lucide-react";
 import { WritingText } from "@/components/core/writing-text";
 import FeatureBlock from "@/components/landing/feature-block";
+import GithubButton from "@/components/landing/github-button";
+import GetStartedButton from "@/components/landing/get-started-button";
 
 export default function HomePage() {
   return (
@@ -21,22 +20,8 @@ export default function HomePage() {
         transition={{ type: "spring", bounce: 0, duration: 1, delay: 0.05 }}
       />
       <div className="flex flex-col sm:flex-row gap-4 mb-8">
-        <Link href="/docs">
-          <Button size="lg" className="w-full sm:w-auto">
-            <Code className="mr-2 h-4 w-4" />
-            Get Started
-          </Button>
-        </Link>
-        <Link
-          href="https://github.com/odest/NamelessUI"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Button variant="outline" size="lg" className="w-full sm:w-auto">
-            <Star className="mr-2 h-4 w-4 text-yellow-500" />
-            Star on GitHub
-          </Button>
-        </Link>
+        <GetStartedButton />
+        <GithubButton />
       </div>
       <FeatureBlock />
     </main>
