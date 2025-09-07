@@ -1,0 +1,82 @@
+---
+title: StickerPeel
+description: Sticker corner lift + peel interaction using 3D transform and shadow depth.
+---
+
+<ComponentCodePreview name="sticker-peel" />
+
+## Installation
+
+<ComponentInstallation name="sticker-peel" deps={"npm install gsap"} />
+
+## Usage
+
+<CodeRenderer name="sticker-peel" />
+
+## Props
+
+<TypeTable
+  type={{
+    imageSrc: {
+      type: "string",
+      required: true,
+      description: "The source URL for the sticker image",
+    },
+    rotate: {
+      type: "number",
+      default: 30,
+      description: "The rotation angle in degrees when dragging",
+    },
+    peelBackHoverPct: {
+      type: "number",
+      default: 30,
+      description: "Percentage of peel effect on hover (0-100)",
+    },
+    peelBackActivePct: {
+      type: "number",
+      default: 40,
+      description: "Percentage of peel effect when active/clicked (0-100)",
+    },
+    peelEasing: {
+      type: "string",
+      default: "power3.out",
+      description: "GSAP easing function for peel animations",
+    },
+    peelHoverEasing: {
+      type: "string",
+      default: "power2.out",
+      description: "GSAP easing function for hover transitions",
+    },
+    width: {
+      type: "number",
+      default: 200,
+      description: "Width of the sticker in pixels",
+    },
+    shadowIntensity: {
+      type: "number",
+      default: 0.6,
+      description: "Intensity of the shadow effect (0-1)",
+    },
+    lightingIntensity: {
+      type: "number",
+      default: 0.1,
+      description: "Intensity of the lighting effect (0-1)",
+    },
+    initialPosition: {
+      type: "string | object",
+      default: "center",
+      description:
+        "Initial position of the sticker ('center', 'random', or {x: number, y: number})",
+    },
+    peelDirection: {
+      type: "number",
+      default: 0,
+      description: "Direction of the peel effect in degrees (0-360)",
+    },
+    className: {
+      type: "string",
+      default: "''",
+      description: "Custom class name for additional styling",
+    },
+  }}
+/>
