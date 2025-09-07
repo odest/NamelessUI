@@ -48,6 +48,7 @@ export default function HomePage() {
       >
         <ScrambledText
           className="mb-8 mt-8"
+          style={{ color: "#ffffff" }}
           radius={50}
           duration={1.2}
           speed={0.5}

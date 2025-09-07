@@ -11,7 +11,7 @@ export default function TextPressureExample() {
         width={true}
         weight={true}
         italic={true}
-        textColor="#ffffff"
+        textColor="currentColor"
         minFontSize={32}
       />
     </>

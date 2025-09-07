@@ -29,7 +29,7 @@ export default function Features() {
             className="w-8 h-8 hover:rotate-360 transition-transform duration-200"
             aria-label="TailwindCSS"
           />
-          <span className="text-xs text-center mt-1 whitespace-nowrap text-black dark:text-white">
+          <span className="text-xs text-center mt-1 whitespace-nowrap text-white">
             Tailwind CSS
           </span>
         </motion.div>
@@ -51,7 +51,7 @@ export default function Features() {
             className="w-8 h-8 hover:rotate-360 transition-transform duration-200"
             aria-label="Motion"
           />
-          <span className="text-xs text-center mt-1 whitespace-nowrap text-black dark:text-white">
+          <span className="text-xs text-center mt-1 whitespace-nowrap text-white">
             Motion
           </span>
         </motion.div>
@@ -66,11 +66,11 @@ export default function Features() {
             ease: [0.23, 1, 0.32, 1],
           }}
           className={cn(
-            "text-black dark:text-white flex flex-col items-center gap-2 relative hover:scale-110 transition-transform duration-200"
+            "text-white flex flex-col items-center gap-2 relative hover:scale-110 transition-transform duration-200"
           )}
         >
           <ShadcnIcon
-            className="w-8 h-8 text-black dark:text-white hover:rotate-360 transition-transform duration-200"
+            className="w-8 h-8 text-white hover:rotate-360 transition-transform duration-200"
             aria-label="Shadcn/ui"
           />
           <span className="text-xs text-center mt-1 whitespace-nowrap">
@@ -88,7 +88,7 @@ export default function Features() {
             ease: [0.23, 1, 0.32, 1],
           }}
           className={cn(
-            "text-black dark:text-white flex flex-col items-center gap-2 relative col-span-1 col-start-1 md:col-auto hover:scale-110 transition-transform duration-200"
+            "text-white flex flex-col items-center gap-2 relative col-span-1 col-start-1 md:col-auto hover:scale-110 transition-transform duration-200"
           )}
         >
           <Nextjs
@@ -109,7 +109,7 @@ export default function Features() {
             ease: [0.23, 1, 0.32, 1],
           }}
           className={cn(
-            "text-black dark:text-white flex flex-col items-center gap-2 relative col-span-1 col-start-3 md:col-auto hover:scale-110 transition-transform duration-200"
+            "text-white flex flex-col items-center gap-2 relative col-span-1 col-start-3 md:col-auto hover:scale-110 transition-transform duration-200"
           )}
         >
           <ReactIcon

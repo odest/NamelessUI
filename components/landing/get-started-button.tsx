@@ -22,7 +22,7 @@ const GetStartedButton = () => {
       <Link href="/docs">
         <Button
           size="lg"
-          className="w-full sm:w-auto flex items-center hover:scale-105 transition-transform duration-200"
+          className="w-full sm:w-auto flex items-center bg-white text-black hover:bg-white,text-black hover:scale-105 transition-transform duration-200"
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >

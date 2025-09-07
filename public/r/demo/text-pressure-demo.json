@@ -8,7 +8,7 @@
   "files": [
     {
       "path": "components/text-pressure-demo/index.tsx",
-      "content": "import TextPressure from \"@/components/core/text-pressure\";\n\nexport default function TextPressureExample() {\n  return (\n    <>\n      <TextPressure\n        text=\"NamelessUI\"\n        flex={true}\n        alpha={false}\n        stroke={false}\n        width={true}\n        weight={true}\n        italic={true}\n        textColor=\"#ffffff\"\n        minFontSize={32}\n      />\n    </>\n  );\n}\n",
+      "content": "import TextPressure from \"@/components/core/text-pressure\";\n\nexport default function TextPressureExample() {\n  return (\n    <>\n      <TextPressure\n        text=\"NamelessUI\"\n        flex={true}\n        alpha={false}\n        stroke={false}\n        width={true}\n        weight={true}\n        italic={true}\n        textColor=\"currentColor\"\n        minFontSize={32}\n      />\n    </>\n  );\n}\n",
       "type": "registry:ui",
       "target": "components/text-pressure-demo.tsx"
     }
