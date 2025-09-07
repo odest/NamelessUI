@@ -1,0 +1,100 @@
+---
+title: Text Pressure
+description: Characters scale / warp interactively based on pointer pressure zone.
+---
+
+<ComponentCodePreview name="text-pressure" />
+
+## Installation
+
+<ComponentInstallation name="text-pressure" />
+
+## Usage
+
+<CodeRenderer name="text-pressure" />
+
+## Props
+
+<TypeTable
+  type={{
+    text: {
+      type: "string",
+      default: "Compressa",
+      description: "Text content that will be displayed and animated",
+    },
+    fontFamily: {
+      type: "string",
+      default: "Compressa VF",
+      description: "Name of the variable font family",
+    },
+    fontUrl: {
+      type: "string",
+      default: "URL to a .woff2 or .ttf file",
+      description: "URL for the variable font file (needed)",
+    },
+    flex: {
+      type: "boolean",
+      default: true,
+      description: "Whether the characters are spaced using flex layout",
+    },
+    scale: {
+      type: "boolean",
+      default: false,
+      description:
+        "If true, vertically scales the text to fill its container height",
+    },
+    alpha: {
+      type: "boolean",
+      default: false,
+      description:
+        "If true, applies an opacity effect based on cursor distance",
+    },
+    stroke: {
+      type: "boolean",
+      default: false,
+      description: "If true, adds a stroke effect around characters",
+    },
+    width: {
+      type: "boolean",
+      default: true,
+      description: "If true, varies the variable-font 'width' axis",
+    },
+    weight: {
+      type: "boolean",
+      default: true,
+      description: "If true, varies the variable-font 'weight' axis",
+    },
+    italic: {
+      type: "boolean",
+      default: true,
+      description: "If true, varies the variable-font 'italics' axis",
+    },
+    textColor: {
+      type: "string",
+      default: "#FFFFFF",
+      description: "The fill color of the text",
+    },
+    strokeColor: {
+      type: "string",
+      default: "#FF0000",
+      description:
+        "The stroke color that will be applied to the text when 'stroke' is set to true",
+    },
+    strokeWidth: {
+      type: "number",
+      default: 2,
+      description: "Width of the stroke effect",
+    },
+    className: {
+      type: "string",
+      default: "''",
+      description: "Additional class for styling the <h1> wrapper",
+    },
+    minFontSize: {
+      type: "number",
+      default: 24,
+      description:
+        "Sets a minimum font-size to avoid overly tiny text on smaller screens",
+    },
+  }}
+/>
