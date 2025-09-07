@@ -3,6 +3,7 @@
 import * as React from "react";
 import {
   type HTMLMotionProps,
+  type MotionValue,
   motion,
   useMotionValue,
   useSpring,
@@ -53,7 +54,7 @@ const generateSpringPath = (
   const perpX = -uy,
     perpY = ux;
 
-  let path = [];
+  const path = [];
   for (let i = 0; i < coilCount; i++) {
     const sx = x1 + ux * (i * d);
     const sy = y1 + uy * (i * d);
@@ -80,7 +81,7 @@ const generateSpringPath = (
   return path.join(" ");
 };
 
-function useMotionValueValue(mv: any) {
+function useMotionValueValue(mv: MotionValue<number>) {
   return React.useSyncExternalStore(
     (callback) => {
       const unsub = mv.on("change", callback);
@@ -177,7 +178,7 @@ function SpringElement({
       <svg
         width="100vw"
         height="100vh"
-        className="fixed inset-0 w-screen h-screen pointer-events-none z-40 inset-0"
+        className="fixed inset-0 w-screen h-screen pointer-events-none z-40"
       >
         <path
           d={path}
