@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tilt-effect-demo",
+  "type": "registry:ui",
+  "title": "Tilt Effect Demo",
+  "description": "Demo showing a tilt effect.",
+  "registryDependencies": ["https://nui.odest.tech/r/tilt-effect.json"],
+  "files": [
+    {
+      "path": "components/tilt-effect-demo/index.tsx",
+      "content": "import Image from \"next/image\";\n\nimport { TiltEffect } from \"@/components/core/tilt-effect\";\nimport { Card, CardContent } from \"@/components/ui/card\";\n\nexport default function TiltEffectExample() {\n  return (\n    <TiltEffect>\n      <Card className=\"overflow-hidden pt-0 md:w-[280px]\">\n        <Image\n          src=\"https://raw.githubusercontent.com/odest/NamelessUI/refs/heads/master/public/hat.webp\"\n          alt=\"\"\n          width={200}\n          height={200}\n          className=\"aspect-square size-full w-full object-cover transition-all duration-200 ease-linear\"\n          unoptimized\n        />\n        <CardContent>\n          <div className=\"text-xl\">Green Hat</div>\n          <div className=\"text-muted-foreground text-sm\">Best Sellers</div>\n        </CardContent>\n      </Card>\n    </TiltEffect>\n  );\n}",
+      "type": "registry:ui",
+      "target": "components/tilt-effect-demo.tsx"
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import { Tabs, Tab } from "fumadocs-ui/components/tabs";
 import { CodeBlock } from "@/components/docs/code-block";
 import { LoaderIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import V0Button from "@/components/docs/v0-button";
 
 type ComponentCodePreview = {
   name: string;
@@ -27,6 +28,9 @@ export default function ComponentCodePreview({
         className="overflow-hidden rounded-tl-none rounded-tr-none p-0"
       >
         <div className="not-prose relative z-0 flex items-center justify-between">
+          <div className="absolute top-4 right-4 z-10">
+            <V0Button name={name} />
+          </div>
           {iframe ? (
             <iframe className="h-[400px] w-full" src={`/demo/${name}`} />
           ) : (
@@ -41,7 +45,7 @@ export default function ComponentCodePreview({
               <div
                 className={cn(
                   "flex min-h-0 w-full items-center justify-center overflow-hidden px-8 py-24 lg:px-32",
-                  contentClassName,
+                  contentClassName
                 )}
               >
                 {Comp && <Comp />}

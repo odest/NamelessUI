@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "writing-text-demo",
+  "type": "registry:ui",
+  "title": "Writing Text Demo",
+  "description": "Demo showing a writing text.",
+  "registryDependencies": ["https://nui.odest.tech/r/writing-text.json"],
+  "files": [
+    {
+      "path": "components/writing-text-demo/index.tsx",
+      "content": "import { WritingText } from \"@/components/core/writing-text\";\n\nexport default function WritingTextExample() {\n  return (\n    <WritingText\n      className=\"text-4xl\"\n      text=\"Writing Text With Effect\"\n      spacing={9}\n    />\n  );\n}",
+      "type": "registry:ui",
+      "target": "components/writing-text-demo.tsx"
+    }
+  ]
+}

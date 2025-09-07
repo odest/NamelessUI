@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spring-element-demo",
+  "type": "registry:ui",
+  "title": "Spring Element Demo",
+  "description": "Demo showing a spring element.",
+  "registryDependencies": ["https://nui.odest.tech/r/spring-element.json"],
+  "files": [
+    {
+      "path": "components/spring-element-demo/index.tsx",
+      "content": "import { SpringElement } from \"@/components/core/spring-element\";\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/components/ui/avatar\";\n\nexport default function SpringElementExample() {\n  return (\n    <SpringElement>\n      <Avatar className=\"size-20\">\n        <AvatarImage draggable={false} src=\"https://raw.githubusercontent.com/odest/NamelessUI/refs/heads/master/app/favicon.ico\" />\n        <AvatarFallback>NUI</AvatarFallback>\n      </Avatar>\n    </SpringElement>\n  );\n}",
+      "type": "registry:ui",
+      "target": "components/spring-element-demo.tsx"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sticker-peel-demo",
+  "type": "registry:ui",
+  "title": "StickerPeel Demo",
+  "description": "Demo showing a sticker peel.",
+  "registryDependencies": ["https://nui.odest.tech/r/sticker-peel.json"],
+  "files": [
+    {
+      "path": "components/sticker-peel-demo/index.tsx",
+      "content": "\"use client\";\n\nimport StickerPeel from \"@/components/core/sticker-peel\";\n\nexport default function StickerPeelExample() {\n  return (\n    <StickerPeel\n      imageSrc={\"https://raw.githubusercontent.com/odest/NamelessUI/refs/heads/master/public/logo.png\"}\n      width={100}\n      rotate={10}\n      peelBackHoverPct={20}\n      peelBackActivePct={40}\n      shadowIntensity={0.6}\n      lightingIntensity={0.1}\n      initialPosition={{ x: 0, y: 0 }}\n    />\n  );\n}",
+      "type": "registry:ui",
+      "target": "components/sticker-peel-demo.tsx"
+    }
+  ]
+}
