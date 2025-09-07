@@ -1,0 +1,57 @@
+---
+title: Scrambled Text
+description: Detects cursor position and applies a distortion effect to text.
+---
+
+<ComponentCodePreview name="scrambled-text" />
+
+## Installation
+
+<ComponentInstallation name="scrambled-text" deps={"npm install gsap"} />
+
+## Usage
+
+<CodeRenderer name="scrambled-text" />
+
+## Props
+
+<TypeTable
+  type={{
+    radius: {
+      type: "number",
+      default: 100,
+      description:
+        "The radius around the mouse pointer within which characters will scramble",
+    },
+    duration: {
+      type: "number",
+      default: 1.2,
+      description: "The duration of the scramble effect on a character",
+    },
+    speed: {
+      type: "number",
+      default: 0.5,
+      description: "The speed of the scramble animation",
+    },
+    scrambleChars: {
+      type: "string",
+      default: ".:",
+      description: "The characters used for scrambling",
+    },
+    children: {
+      type: "React.ReactNode",
+      required: true,
+      description: "The text content to be scrambled",
+    },
+    className: {
+      type: "string",
+      default: "''",
+      description: "Additional CSS classes for the component",
+    },
+    style: {
+      type: "React.CSSProperties",
+      default: "{}",
+      description: "Inline styles for the component",
+    },
+  }}
+/>

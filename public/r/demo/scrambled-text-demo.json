@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scrambled-text-demo",
+  "type": "registry:ui",
+  "title": "Scrambled Text Demo",
+  "description": "Demo showing a scrambled text effect.",
+  "registryDependencies": ["https://nui.odest.tech/r/scrambled-text.json"],
+  "files": [
+    {
+      "path": "components/scrambled-text-demo/index.tsx",
+      "content": "import ScrambledText from \"@/components/core/scrambled-text\";\n\nexport default function ScrambledTextExample() {\n  return (\n    <ScrambledText radius={50} duration={1.2} speed={0.5} scrambleChars={\".:\"}>\n      Nameless UI - Find the perfect React UI component in seconds, build\n      beautiful interfaces faster\n    </ScrambledText>\n  );\n}\n",
+      "type": "registry:ui",
+      "target": "components/scrambled-text-demo.tsx"
+    }
+  ]
+}

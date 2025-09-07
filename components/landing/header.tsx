@@ -30,13 +30,13 @@ export function Header() {
           <nav className="hidden md:flex items-center space-x-8">
             <Link
               href="/docs"
-              className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
+              className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium transform hover:scale-105 hover:-translate-y-0.5 duration-200 ease-in-out"
             >
               Documentation
             </Link>
             <Link
               href="/docs/tilt-effect"
-              className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
+              className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium transform hover:scale-105 hover:-translate-y-0.5 duration-200 ease-in-out"
             >
               Components
             </Link>
