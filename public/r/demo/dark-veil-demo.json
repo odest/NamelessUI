@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dark-veil-demo",
+  "type": "registry:ui",
+  "title": "Dark Veil Demo",
+  "description": "Demo showing an animated dark background.",
+  "registryDependencies": ["https://nui.odest.tech/r/dark-veil.json"],
+  "files": [
+    {
+      "path": "components/dark-veil-demo/index.tsx",
+      "content": "import DarkVeil from \"@/components/core/dark-veil\";\n\nexport default function DarkVeilExample() {\n  return (\n    <div className=\"absolute inset-0 w-full h-full\">\n      <DarkVeil />\n    </div>\n  );\n}\n",
+      "type": "registry:ui",
+      "target": "components/dark-veil-demo.tsx"
+    }
+  ]
+}

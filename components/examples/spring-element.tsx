@@ -1,7 +1,7 @@
 import { SpringElement } from "@/components/core/spring-element";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-export default function TiltEffectExample() {
+export default function SpringElementExample() {
   return (
     <SpringElement>
       <Avatar className="size-20">

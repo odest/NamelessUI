@@ -6,7 +6,7 @@ import FeatureBlock from "@/components/landing/feature-block";
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-[80vh] px-4 text-center">
+    <main className="flex flex-col items-center justify-center min-h-screen px-4 text-center">
       <WritingText
         className="mb-6 text-4xl md:text-6xl font-bold"
         text="Nameless UI"

@@ -1,0 +1,56 @@
+---
+title: Dark Veil
+description: Subtle dark background with a smooth animation and postprocessing.
+---
+
+<ComponentCodePreview name="dark-veil" />
+
+## Installation
+
+<ComponentInstallation name="dark-veil" deps={"npm install ogl"} />
+
+## Usage
+
+<CodeRenderer name="dark-veil" />
+
+## Props
+
+<TypeTable
+  type={{
+    hueShift: {
+      type: "number",
+      default: 0,
+      description: "Shifts the hue of the entire animation",
+    },
+    noiseIntensity: {
+      type: "number",
+      default: 0,
+      description: "Intensity of the noise/grain effect",
+    },
+    scanlineIntensity: {
+      type: "number",
+      default: 0,
+      description: "Intensity of the scanline effect",
+    },
+    speed: {
+      type: "number",
+      default: 0.5,
+      description: "Speed of the animation",
+    },
+    scanlineFrequency: {
+      type: "number",
+      default: 0,
+      description: "Frequency of the scanlines",
+    },
+    warpAmount: {
+      type: "number",
+      default: 0,
+      description: "Amount of warp distortion applied to the effect",
+    },
+    resolutionScale: {
+      type: "number",
+      default: 1,
+      description: "Scale factor for the resolution",
+    },
+  }}
+/>
