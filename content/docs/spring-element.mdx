@@ -1,0 +1,87 @@
+---
+title: Spring Element
+description: A spring-element component.
+---
+
+<ComponentCodePreview name="spring-element" />
+
+## Installation
+
+<ComponentInstallation name="spring-element" deps={"npm install motion"} />
+
+## Usage
+
+<CodeRenderer name="spring-element" />
+
+## Props
+
+<TypeTable
+  type={{
+    children: {
+      type: "ReactElement",
+      required: true,
+      description: "The React element to be wrapped with the spring effect",
+    },
+    className: {
+      type: "string",
+      required: false,
+      description: "Additional CSS classes for the draggable element",
+    },
+    springClassName: {
+      type: "string",
+      required: false,
+      description: "Additional CSS classes for the spring path SVG",
+    },
+    dragElastic: {
+      type: "number",
+      default: 0.2,
+      description: "The elastic factor for dragging behavior",
+    },
+    springConfig: {
+      type: "object",
+      default: "{ stiffness: 200, damping: 16 }",
+      description: "Configuration for the spring animation",
+      properties: {
+        stiffness: {
+          type: "number",
+          description: "The stiffness of the spring",
+        },
+        damping: {
+          type: "number",
+          description: "The damping of the spring",
+        },
+      },
+    },
+    springPathConfig: {
+      type: "object",
+      default: "{}",
+      description: "Configuration for the spring path visualization",
+      properties: {
+        coilCount: {
+          type: "number",
+          description: "Number of coils in the spring",
+        },
+        amplitudeMin: {
+          type: "number",
+          description: "Minimum amplitude of the spring coils",
+        },
+        amplitudeMax: {
+          type: "number",
+          description: "Maximum amplitude of the spring coils",
+        },
+        curveRatioMin: {
+          type: "number",
+          description: "Minimum curve ratio for the spring path",
+        },
+        curveRatioMax: {
+          type: "number",
+          description: "Maximum curve ratio for the spring path",
+        },
+        bezierOffset: {
+          type: "number",
+          description: "Offset for bezier curves in the spring path",
+        },
+      },
+    },
+  }}
+/>

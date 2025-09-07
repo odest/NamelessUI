@@ -29,12 +29,12 @@ export const TiltEffect: React.FC<TiltEffectProps> = ({
   const rotateX = useTransform(
     ySpring,
     [-elementSize.height / 2, elementSize.height / 2],
-    [tiltFactor, -tiltFactor],
+    [tiltFactor, -tiltFactor]
   );
   const rotateY = useTransform(
     xSpring,
     [-elementSize.width / 2, elementSize.width / 2],
-    [-tiltFactor, tiltFactor],
+    [-tiltFactor, tiltFactor]
   );
 
   useEffect(() => {

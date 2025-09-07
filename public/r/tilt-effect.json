@@ -3,9 +3,8 @@
   "name": "tilt-effect",
   "type": "registry:block",
   "title": "Tilt Effect",
-  "dependencies": [
-    "motion"
-  ],
+  "description": "Tilt Effect is an interactive component that creates a perspective effect by making buttons, cards or images respond to mouse movements.",
+  "dependencies": ["motion"],
   "files": [
     {
       "path": "components/core/tilt-effect.tsx",
