@@ -1,0 +1,94 @@
+---
+title: Splash Cursor
+description: An interactive WebGL fluid simulation component.
+---
+
+<ComponentCodePreview name="splash-cursor" />
+
+## Installation
+
+<ComponentInstallation name="splash-cursor" />
+
+## Usage
+
+<CodeRenderer name="splash-cursor" />
+
+## Props
+
+<TypeTable
+  type={{
+    SIM_RESOLUTION: {
+      type: "number",
+      default: 128,
+      description: "Fluid simulation resolution for velocity fields",
+    },
+    DYE_RESOLUTION: {
+      type: "number",
+      default: 1440,
+      description: "Resolution of the color/dye texture",
+    },
+    CAPTURE_RESOLUTION: {
+      type: "number",
+      default: 512,
+      description:
+        "Resolution used for certain capture operations (rarely changed)",
+    },
+    DENSITY_DISSIPATION: {
+      type: "number",
+      default: 3.5,
+      description: "Rate at which color/density dissipates over time",
+    },
+    VELOCITY_DISSIPATION: {
+      type: "number",
+      default: 2,
+      description: "Rate at which velocity dissipates over time",
+    },
+    PRESSURE: {
+      type: "number",
+      default: 0.1,
+      description: "Base pressure for the fluid simulation",
+    },
+    PRESSURE_ITERATIONS: {
+      type: "number",
+      default: 20,
+      description: "Number of Jacobi iterations used for the pressure solver",
+    },
+    CURL: {
+      type: "number",
+      default: 3,
+      description: "Amount of vorticity/curl to apply for swirling effects",
+    },
+    SPLAT_RADIUS: {
+      type: "number",
+      default: 0.2,
+      description: "Radius of the 'splat' effect when user interacts",
+    },
+    SPLAT_FORCE: {
+      type: "number",
+      default: 6000,
+      description: "Force of the fluid 'splat' on each interaction",
+    },
+    SHADING: {
+      type: "boolean",
+      default: true,
+      description: "Toggles simple lighting/shading on the fluid",
+    },
+    COLOR_UPDATE_SPEED: {
+      type: "number",
+      default: 10,
+      description: "Frequency at which pointer colors are re-randomized",
+    },
+    BACK_COLOR: {
+      type: "object",
+      default: "{ r: 0.5, g: 0, b: 0 }",
+      description:
+        "Base background color for the fluid. Not always used if TRANSPARENT is true",
+    },
+    TRANSPARENT: {
+      type: "boolean",
+      default: true,
+      description:
+        "Determines if the canvas background should be rendered with alpha",
+    },
+  }}
+/>
