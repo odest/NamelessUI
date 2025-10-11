@@ -1,5 +1,6 @@
 import { Header } from "@/components/landing/header";
 import DarkVeil from "@/components/core/dark-veil";
+import SplashCursor from "@/components/core/splash-cursor";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -13,6 +14,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           warpAmount={0.1}
         />
       </div>
+      <SplashCursor />
       <Header />
       <div>{children}</div>
     </>
