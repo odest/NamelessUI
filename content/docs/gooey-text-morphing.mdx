@@ -1,0 +1,46 @@
+---
+title: Gooey Text
+description: A smooth text morphing animation with a gooey blur effect that transitions between multiple texts.
+---
+
+<ComponentCodePreview name="gooey-text-morphing" />
+
+## Installation
+
+<ComponentInstallation name="gooey-text-morphing" />
+
+## Usage
+
+<CodeRenderer name="gooey-text-morphing" />
+
+## Props
+
+<TypeTable
+  type={{
+    texts: {
+      type: "string[]",
+      required: true,
+      description: "An array of text strings to morph between",
+    },
+    morphTime: {
+      type: "number",
+      default: 1,
+      description: "Duration of the morph transition in seconds",
+    },
+    cooldownTime: {
+      type: "number",
+      default: 0.25,
+      description: "Cooldown time between transitions in seconds",
+    },
+    className: {
+      type: "string",
+      required: false,
+      description: "Additional CSS classes for the container",
+    },
+    textClassName: {
+      type: "string",
+      required: false,
+      description: "Additional CSS classes for the text elements",
+    },
+  }}
+/>

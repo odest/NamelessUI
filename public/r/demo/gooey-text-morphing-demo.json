@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "gooey-text-morphing-demo",
+  "type": "registry:ui",
+  "title": "Gooey Text",
+  "description": "Demo showing a gooey text morphing.",
+  "registryDependencies": ["https://nui.odest.tech/r/gooey-text-morphing.json"],
+  "files": [
+    {
+      "path": "components/gooey-text-morphing-demo/index.tsx",
+      "content": "import { GooeyText } from \"@/components/core/gooey-text-morphing\";\n\nexport default function GooeyTextExample() {\n  return (\n    <div className=\"h-[200px] flex items-center justify-center\">\n      <GooeyText\n        texts={[\"Open\", \"Source\", \"Make\", \"Your\", \"Life\", \"Better\"]}\n        morphTime={1}\n        cooldownTime={0.25}\n        className=\"font-bold\"\n      />\n    </div>\n  );\n}\n",
+      "type": "registry:ui",
+      "target": "components/gooey-text-morphing-demo.tsx"
+    }
+  ]
+}
