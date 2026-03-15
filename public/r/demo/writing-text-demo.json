@@ -4,7 +4,7 @@
   "type": "registry:ui",
   "title": "Writing Text Demo",
   "description": "Demo showing a writing text.",
-  "registryDependencies": ["https://nui.odest.tech/r/writing-text.json"],
+  "registryDependencies": ["https://nui.odest.dev/r/writing-text.json"],
   "files": [
     {
       "path": "components/writing-text-demo/index.tsx",

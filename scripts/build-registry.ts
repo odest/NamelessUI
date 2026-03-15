@@ -4,7 +4,7 @@ const path = require("path");
 const registryTemplate = {
   $schema: "https://ui.shadcn.com/schema/registry.json",
   name: "nameless-ui",
-  homepage: "https://nui.odest.tech",
+  homepage: "https://nui.odest.dev",
   items: [] as Array<Record<string, any>>,
 };
 

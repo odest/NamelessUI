@@ -4,7 +4,7 @@
   "type": "registry:ui",
   "title": "Gooey Text",
   "description": "Demo showing a gooey text morphing.",
-  "registryDependencies": ["https://nui.odest.tech/r/gooey-text-morphing.json"],
+  "registryDependencies": ["https://nui.odest.dev/r/gooey-text-morphing.json"],
   "files": [
     {
       "path": "components/gooey-text-morphing-demo/index.tsx",

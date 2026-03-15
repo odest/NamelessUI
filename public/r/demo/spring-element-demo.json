@@ -4,7 +4,7 @@
   "type": "registry:ui",
   "title": "Spring Element Demo",
   "description": "Demo showing a spring element.",
-  "registryDependencies": ["https://nui.odest.tech/r/spring-element.json"],
+  "registryDependencies": ["https://nui.odest.dev/r/spring-element.json"],
   "files": [
     {
       "path": "components/spring-element-demo/index.tsx",

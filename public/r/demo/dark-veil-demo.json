@@ -4,7 +4,7 @@
   "type": "registry:ui",
   "title": "Dark Veil Demo",
   "description": "Demo showing an animated dark background.",
-  "registryDependencies": ["https://nui.odest.tech/r/dark-veil.json"],
+  "registryDependencies": ["https://nui.odest.dev/r/dark-veil.json"],
   "files": [
     {
       "path": "components/dark-veil-demo/index.tsx",

@@ -7,13 +7,13 @@ interface V0ButtonProps {
 }
 
 export default function V0Button({ name, className }: V0ButtonProps) {
-  const v0Url = `https://v0.dev/chat/api/open?url=https://nui.odest.tech/r/demo/${name}-demo.json`;
+  const v0Url = `https://v0.dev/chat/api/open?url=https://nui.odest.dev/r/demo/${name}-demo.json`;
   return (
     <Button
       aria-label="Open in v0"
       className={cn(
         "gap-1 rounded-lg shadow-none bg-black px-3 text-xs text-white hover:bg-zinc-800 dark:bg-white dark:text-black dark:hover:bg-zinc-200 transition-colors duration-200 not-prose",
-        className
+        className,
       )}
       asChild
     >

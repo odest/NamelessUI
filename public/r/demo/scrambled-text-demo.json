@@ -4,7 +4,7 @@
   "type": "registry:ui",
   "title": "Scrambled Text Demo",
   "description": "Demo showing a scrambled text effect.",
-  "registryDependencies": ["https://nui.odest.tech/r/scrambled-text.json"],
+  "registryDependencies": ["https://nui.odest.dev/r/scrambled-text.json"],
   "files": [
     {
       "path": "components/scrambled-text-demo/index.tsx",

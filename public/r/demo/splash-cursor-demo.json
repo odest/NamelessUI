@@ -4,7 +4,7 @@
   "type": "registry:ui",
   "title": "Splash Cursor Demo",
   "description": "An interactive WebGL fluid simulation component.",
-  "registryDependencies": ["https://nui.odest.tech/r/splash-cursor.json"],
+  "registryDependencies": ["https://nui.odest.dev/r/splash-cursor.json"],
   "files": [
     {
       "path": "components/splash-cursor-demo/index.tsx",

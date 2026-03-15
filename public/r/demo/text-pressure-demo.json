@@ -4,7 +4,7 @@
   "type": "registry:ui",
   "title": "Text Pressure Demo",
   "description": "Demo showing a text pressure effect.",
-  "registryDependencies": ["https://nui.odest.tech/r/text-pressure.json"],
+  "registryDependencies": ["https://nui.odest.dev/r/text-pressure.json"],
   "files": [
     {
       "path": "components/text-pressure-demo/index.tsx",

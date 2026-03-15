@@ -4,7 +4,7 @@
   "type": "registry:ui",
   "title": "Tilt Effect Demo",
   "description": "Demo showing a tilt effect.",
-  "registryDependencies": ["https://nui.odest.tech/r/tilt-effect.json"],
+  "registryDependencies": ["https://nui.odest.dev/r/tilt-effect.json"],
   "files": [
     {
       "path": "components/tilt-effect-demo/index.tsx",

@@ -4,7 +4,7 @@
   "type": "registry:ui",
   "title": "StickerPeel Demo",
   "description": "Demo showing a sticker peel.",
-  "registryDependencies": ["https://nui.odest.tech/r/sticker-peel.json"],
+  "registryDependencies": ["https://nui.odest.dev/r/sticker-peel.json"],
   "files": [
     {
       "path": "components/sticker-peel-demo/index.tsx",
